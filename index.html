@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Frontend Mentor - News homepage" />
+  <meta name="description" content="Vite, HTML, CSS, JavaScript" />
+  <meta name="author" content="Rebecca Padgett">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | News homepage</title>
+  <!-- !css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="layout ">
+  <header class="header">
+    <h1 class="visually-hidden">Welcome to the News homepage</h1>
+    <a href="#">
+      <img src="logo.svg" width="65" height="40" alt="The W.">
+    </a>
+    <button class="navbar-toggle" data-js-toggle aria-controls="navbar" aria-expanded="false">
+      <span class="visually-hidden">Open Mobile Navigation</span>
+      <img class="icon-open" src="icon-menu.svg" alt="">
+      <img class="icon-close" src="icon-menu-close.svg" alt="">
+    </button>
+    <nav id="navbar">
+      <ul class="navbar-list" role="list">
+        <li>
+          <a href="#" class="navbar-link">Home</a>
+        </li>
+        <li>
+          <a href="#" class="navbar-link">New</a>
+        </li>
+        <li>
+          <a href="#" class="navbar-link">Popular</a>
+        </li>
+        <li>
+          <a href="#" class="navbar-link">Trending</a>
+        </li>
+        <li>
+          <a href="#" class="navbar-link">Categories</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="column-grid space">
+      <section class="featured-wrapper span-2" aria-labelledby="article-title">
+        <h2 class="visually-hidden">Featured Article</h2>
+        <article class="feature-article">
+          <picture>
+            <source media="(max-width: 43.75rem)" srcset="image-web-3-mobile.jpg">
+            <img src="image-web-3-desktop.jpg" loading="lazy" alt="">
+          </picture>
+          <h3 class="article-title">The Bright Future of Web 3.0?</h3>
+          <div class="flow">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people. But is it really fulfilling its promise?</p>
+            <a href="#" class="button">Read more
+              <span class="visually-hidden">about the future of web 3.0</span>
+            </a>
+          </div>
+        </article>
+      </section>
+      <aside class="flow">
+        <h2 class="accent-clr">New</h2>
+        <ul class="border-bottom-list" role="list">
+          <li>
+            <article class="flow">
+              <h3>
+                <a href="#">Hydrogen VS Electric Cars</a>
+              </h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+          </li>
+          <li>
+            <article class="flow">
+              <h3>
+                <a href="#">The Downsides of AI Artistry</a>
+              </h3>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </article>
+          </li>
+          <li>
+            <article class="flow">
+              <h3>
+                <a href="#">Is VC Funding Drying Up?</a>
+              </h3>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </article>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <ul class="column-grid space" role="list">
+      <li>
+        <article class="popular-article">
+          <img src="image-retro-pcs.jpg" width="100" height="127" alt=" retro computer, cassette, keyboard on a desk">
+          <div>
+            <h3>
+              <a href="#">Revive the Retro PCs</a>
+            </h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="popular-article">
+          <img src="image-top-laptops.jpg" width="100" height="127" alt="keyboard with red blacklighting">
+          <div>
+            <h3>
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="popular-article">
+          <img src="image-gaming-growth.jpg" width="100" height="127" alt="gaming monitor">
+          <div>
+            <h3>
+              <a href="#">The Growth of Gaming</a>
+            </h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </main>
+  <!-- !JavaScript -->
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
