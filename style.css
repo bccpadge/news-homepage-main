@@ -363,7 +363,7 @@ main {
 /* !aside styles */
 aside {
   --clr-heading: hsl(var(--clr-neutral-100));
-  --clr-body: hsl(var(--clr-neutral-500));
+  --clr-text: hsl(var(--clr-neutral-500));
   --clr-accent-400: hsl(var(--clr-yellow-400));
   background-color: hsl(var(--clr-neutral-900));
   padding: 1.25rem;
