@@ -13,7 +13,8 @@
 
   --clr-neutral-100: 36 100% 99%;
   --clr-neutral-200: 237 20% 80%;
-  --clr-neutral-400: 236 13% 74%;
+  --clr-neutral-400: 252 27% 41%;
+  --clr-neutral-500: 236 13% 74%;
   --clr-neutral-800: 240 100% 5%;
   --clr-neutral-900: 238 92% 5%;
 
@@ -362,7 +363,7 @@ main {
 /* !aside styles */
 aside {
   --clr-heading: hsl(var(--clr-neutral-100));
-  --clr-body: hsl(var(--clr-neutral-200));
+  --clr-body: hsl(var(--clr-neutral-500));
   --clr-accent-400: hsl(var(--clr-yellow-400));
   background-color: hsl(var(--clr-neutral-900));
   padding: 1.25rem;
